@@ -1,0 +1,112 @@
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/text';
+
+/* ----- DEFAULTS ----- */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+*, html, body {
+  padding: 0;
+  margin: 0;
+  width: auto;
+  height: auto;
+}
+
+body {
+  background: white;
+}
+
+header, #pg-about, #hdr-bar {
+  background-color: $header-color;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+hr {
+  width: 33%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+}
+
+.hdr-button {
+  position: relative;
+  top: 12%;
+  height: 76%;
+  padding: 7px;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: $pg-about-color;
+  }
+}
+
+.wrapper {
+  width: 100%;
+}
+
+#pg-about {
+  display: inline-block;
+  padding: 20px 30px;
+
+  &-wrapper {
+    @include centerer;
+    top: calc(50% - 30px);
+    text-align: center;
+    z-index: 1;
+  }
+
+  & .title {
+    margin-bottom: 25px;
+  }
+
+  &-sub {
+    margin: 25px 0 10px 0;
+  }
+}
+
+#hdr-img-container {
+  display: flex;
+  flex-direction: row;
+
+  & .hdr-img {
+    width: 25%;
+  }
+}
+
+#contents-container {
+  height: $hdr-bar-height;
+}
+
+#search-button {
+  float: right;
+  margin-right: 3em;
+}
+
+#table-of-contents-button {
+  float: left;
+  margin-left: 3em;
+}

@@ -1,0 +1,21 @@
+@import 'partials/variables';
+
+h1, p {
+  background-color: transparent;
+  word-wrap: normal;
+  overflow: hidden;
+  }
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-family: $pg-title-text;
+  letter-spacing: 3px;
+  }
+
+#pg-about-sub {
+  color: $pg-about-color;
+  font-size: 16px;
+  font-family: $pg-title-text
+  }

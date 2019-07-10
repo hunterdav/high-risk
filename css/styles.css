@@ -58,8 +58,14 @@ hr {
   position: relative;
   top: 12%;
   height: 76%;
+  width: 44px;
   padding: 7px;
-  border-radius: 50%; }
+  border: none;
+  border-radius: 50%;
+  background-color: #1d1d1d;
+  background-size: 75%;
+  background-position: 50%;
+  background-repeat: no-repeat; }
   .hdr-button:hover {
     background-color: #9d9d9d; }
 
@@ -93,8 +99,14 @@ hr {
 
 #search-button {
   float: right;
-  margin-right: 3em; }
+  margin-right: 3em;
+  background-image: url("../../images/magnifier.png"); }
+  #search-button:hover {
+    background-image: url("../../images/magnifier-hover.png"); }
 
 #table-of-contents-button {
   float: left;
-  margin-left: 3em; }
+  margin-left: 3em;
+  background-image: url("../../images/toc.png"); }
+  #table-of-contents-button:hover {
+    background-image: url("../../images/toc-hover.png"); }

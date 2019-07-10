@@ -18,7 +18,7 @@
       <header>
 
         <div id="pg-about-wrapper" class="wrapper">
-          <div id="pg-about">t
+          <div id="pg-about">
             <a href="#"><h1 class="title">High Risk by Cat</h1></a>
             <hr color="#2d2d2d" size="2px">
             <p id="pg-about-sub">9 years of bipolar insanity (and counting)</p>
@@ -42,14 +42,16 @@
         </div>
         
         <div id="contents-container" class="container">
-          <header-button 
+          <!-- <header-button 
             v-for="post in posts"
-            :key="posts.key"
+            :key="post.key"
             :id="post.idName"
-            :src="'./images/' + post.icon + '.png'"
+            :src="'./images/' + post.img + '.png'"
             >
-          </header-button>
-        
+          </header-button> -->
+
+          <input id="table-of-contents-button" class="hdr-button" type="button">
+          <input id="search-button" class="hdr-button" type="button">
 
         </div>
       </header>

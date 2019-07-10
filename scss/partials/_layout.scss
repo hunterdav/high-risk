@@ -56,8 +56,14 @@ hr {
   position: relative;
   top: 12%;
   height: 76%;
+  width: 44px;
   padding: 7px;
+  border: none;
   border-radius: 50%;
+  background-color: $header-color;
+  background-size: 75%;
+  background-position: 50%;
+  background-repeat: no-repeat;
 
   &:hover {
     background-color: $pg-about-color;
@@ -104,9 +110,19 @@ hr {
 #search-button {
   float: right;
   margin-right: 3em;
+  background-image: url('../../images/magnifier.png');
+
+  &:hover {
+    background-image: url('../../images/magnifier-hover.png')
+  }
 }
 
 #table-of-contents-button {
   float: left;
   margin-left: 3em;
+  background-image: url('../../images/toc.png');
+
+  &:hover {
+    background-image: url('../../images/toc-hover.png');
+  }
 }
